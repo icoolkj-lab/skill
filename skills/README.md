@@ -109,6 +109,18 @@ skill-suite/
 - `data-analysis/stock-analysis`
 - `image-design/icon-generator`
 
+## 第二批迁移目录
+
+- `content-creation/content-research-writer`
+- `content-creation/wechat-hotspot-publisher`
+- `marketing-commerce/ecommerce-full-pipeline`
+- `marketing-commerce/pet-commerce-creator`
+- `office-productivity/convert-documents-to-markdown`
+- `office-productivity/pdf-processing-pro`
+- `ai-agents/agent-team`
+- `ai-agents/multi-agent-meeting`
+- `software-development/data-flow-skill`
+
 ## 本仓库整理迁移策略
 
 当前仓库包含注册表、搜索索引、应用项目、同步脚本、工作流和历史引用。为避免破坏现有使用：
