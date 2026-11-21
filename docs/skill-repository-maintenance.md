@@ -1,5 +1,14 @@
 # Skill 仓库维护与审计
 
+## 维护原则
+
+- 日常整理直接在 `main` 上进行，使用小批量、可回滚的提交。
+- 不创建临时整理分支，不要求通过 PR 才能完成仓库内部维护。
+- 只删除经过验证的无用文件、字节级重复且不承担独立用途的副本、缓存或系统元数据。
+- 保留 Skill 完整包、套件结构、依赖资源、来源和许可证信息。
+- 对许可证、来源或运行用途不明确的资产，先保留并核查。
+- 每次变更检查相关路径引用、索引、README、脚本和 CI 工作流。
+
 ## 只读盘点
 
 在仓库根目录运行：
@@ -8,43 +17,37 @@
 python scripts/audit_skill_repository.py
 ```
 
-生成完整 JSON 清单：
+生成 JSON 清单：
 
 ```bash
 python scripts/audit_skill_repository.py --json-out docs/reports/skill-inventory.json
 ```
 
-脚本会统计：
+扫描项目应统计仓库文件、Skill frontmatter、路径、name、description、内容 SHA-256、重复文件组及系统元数据。扫描工具必须只读，不自动删除、移动或覆盖资产。
 
-- 仓库文件总数；
-- 全仓 `SKILL.md` 数量及 frontmatter；
-- 每个 Skill 的路径、`name`、`description` 和 SHA-256；
-- 内容完全相同的文件组；
-- 完全重复的 Skill 文档组；
-- macOS `__MACOSX`、`._*`、`.DS_Store` 元数据文件。
+## 去重决策
 
-脚本只读扫描，不会自动删除、移动或覆盖文件。相同 SHA 只代表文件字节完全一致，不代表这些文件可以安全删除。
+1. 完全重复的入口：核对保留入口、引用、安装关系后才移除副本。
+2. 同名不同内容：比较 frontmatter、正文、依赖、脚本、references、版本和来源。
+3. 集合与子 Skill：分别保留并登记关系。
+4. 项目快照：确认项目是否分叉、独立运行和引用关系后再处理。
+5. 共享脚本或素材：若副本服务于独立安装/分发，保留并建立一致性检查。
+6. 系统元数据：清理 `._*`、`.DS_Store`、`__MACOSX` 等无效文件，但不误删源码。
 
-## 去重决策规则
+## 提交与验证
 
-1. **完全相同的重复 Skill 入口**：确认保留路径、安装入口、引用和工作流后，才删除多余副本。
-2. **同名不同内容**：先比较 frontmatter、正文、依赖、脚本、参考资料和版本信息；不得按名称直接删除。
-3. **集合与子 Skill**：父级入口和子级能力分别登记，不把它们当作重复。
-4. **项目镜像**：根目录和 `projects/` 下的文件即使 SHA 相同，也要先确认项目是否分叉、构建是否依赖两处路径。
-5. **共享脚本/素材**：确认运行时引用后再考虑抽取公共目录；否则保留独立包内副本，保证 Skill 可单独安装。
-6. **系统元数据**：`._*`、`.DS_Store` 和 `__MACOSX` 内容可清理，但先确认不包含真实源码文件。
+每批整理使用清晰的 commit message；尽可能运行：
 
-## 推荐操作流程
+```bash
+python scripts/build_skill_catalog.py
+python scripts/validate_skill_catalog.py
+python scripts/check_skill_mirrors.py
+```
 
-1. 在独立分支执行只读盘点。
-2. 检查重复组并给出“可删除 / 保留 / 待核验”结论。
-3. 每批只处理一类文件，提交独立 Commit。
-4. 扫描所有相对路径、README 安装命令、索引 JSON 和 GitHub Actions 引用。
-5. 运行 Skill Validator 和项目自身测试。
-6. 比较整理前后的清单、文件数量与 Git diff。
-7. 完成验收后再创建 PR，由仓库维护者决定是否合并。
+并运行涉及项目自身的测试。对 GitHub Actions 的结果，只有在检查实际运行记录后才能标记通过。
 
-## 当前维护文档
+## 维护文档
 
 - [仓库结构说明](repository-structure.md)
-- [仓库清理与去重报告](repository-cleanup-report.md)
+- [历史清理记录](repository-cleanup-report.md)
+- [资产治理规范](skill-asset-governance.md)
