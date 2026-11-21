@@ -11,8 +11,8 @@ The most comprehensive and frequently updated AI Agent skill library, featuring 
 
 [简体中文](README.md) | **English**
 
-[![Search Index](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=Search%20Index&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
-[![Local Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=Local%20Skills&color=green&style=flat-square)](https://github.com/icoolkj/skill)
+[![Search Index](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Ficoolkj%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=Search%20Index&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
+[![Local Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Ficoolkj%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=Local%20Skills&color=green&style=flat-square)](https://github.com/icoolkj/skill)
 [![Trending](https://img.shields.io/badge/Trending-GitHub%20Live-ec4899?style=flat-square)](https://github.com/icoolkj/skill/blob/main/public/data/skills.json)
 [![Backup Coverage](https://img.shields.io/badge/Backup%20Coverage-100%25-success?style=flat-square)](https://github.com/icoolkj/skill)
 [![Auto Update](https://img.shields.io/badge/Update-Every%2024h-orange?style=flat-square)](https://github.com/icoolkj/skill)
