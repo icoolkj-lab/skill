@@ -34,7 +34,7 @@ def main():
             elif not target.exists(): errors.append(f"{prefix}: path does not exist: {path}")
             elif target.name=="SKILL.md":
                 text=target.read_text(encoding="utf-8",errors="replace")
-                fm=re.match(r"^---\\s*\\n([\\s\\S]*?)\\n---(?:\\s*\\n|$)",text)
+                fm=re.match(r"^---\s*\n([\s\S]*?)\n---(?:\s*\n|$)",text)
                 if not fm: warnings.append(f"{path}: no parseable frontmatter")
                 else:
                     keys={m.group(1) for line in fm.group(1).splitlines() if (m:=re.match(r"^([A-Za-z0-9_-]+):",line))}

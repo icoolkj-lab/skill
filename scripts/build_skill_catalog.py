@@ -14,11 +14,11 @@ CATEGORY_MAP = {
     "professional-domains":"professional-domains", "skill-development":"skill-development"
 }
 def read_frontmatter(text):
-    m=re.match(r"^---\\s*\\n([\\s\\S]*?)\\n---(?:\\s*\\n|$)",text)
+    m=re.match(r"^---\s*\n([\s\S]*?)\n---(?:\s*\n|$)",text)
     if not m: return {}
     result={}
     for line in m.group(1).splitlines():
-        match=re.match(r"^([A-Za-z0-9_-]+):\\s*(.*?)\\s*$",line)
+        match=re.match(r"^([A-Za-z0-9_-]+):\s*(.*?)\s*$",line)
         if match:
             result[match.group(1)]=match.group(2).strip().strip('"').strip("'")
     return result
@@ -59,7 +59,7 @@ def main():
     out=args.out if args.out.is_absolute() else root/args.out
     out.parent.mkdir(parents=True,exist_ok=True)
     payload={"schema_version":1,"generated_at":date.today().isoformat(),"repository":"https://github.com/icoolkj/skill","assets":records}
-    out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Generated {len(records)} provisional records: {out}")
     print("WARNING: records are provisional; source/license/quality/verification require review.")
 if __name__=="__main__": main()
