@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a provisional registry from SKILL.md files. No network; no mutation of skill assets."""
 from __future__ import annotations
-import argparse, json, re
+import argparse, hashlib, json, re
 from pathlib import Path
 from datetime import date
 
@@ -14,19 +14,20 @@ CATEGORY_MAP = {
     "professional-domains":"professional-domains", "skill-development":"skill-development"
 }
 def read_frontmatter(text):
-    m=re.match(r"^---\s*\n([\s\S]*?)\n---(?:\s*\n|$)",text)
+    m=re.match(r"^---\\s*\\n([\\s\\S]*?)\\n---(?:\\s*\\n|$)",text)
     if not m: return {}
     result={}
     for line in m.group(1).splitlines():
-        # Conservative scalar-only parser. Complex YAML is not guessed.
-        match=re.match(r"^([A-Za-z0-9_-]+):\s*(.*?)\s*$",line)
+        match=re.match(r"^([A-Za-z0-9_-]+):\\s*(.*?)\\s*$",line)
         if match:
             result[match.group(1)]=match.group(2).strip().strip('"').strip("'")
     return result
 def asset_id(name,path):
+    """Readable, deterministic IDs; path digest prevents same-name collisions."""
     candidate=(name or Path(path).parent.name).lower()
-    candidate=re.sub(r"[^a-z0-9]+","-",candidate).strip("-")
-    return candidate or "unnamed-skill"
+    slug=re.sub(r"[^a-z0-9]+","-",candidate).strip("-") or "unnamed-skill"
+    digest=hashlib.sha256(path.encode("utf-8")).hexdigest()[:8]
+    return f"{slug}-{digest}"
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--root",type=Path,default=Path(__file__).resolve().parents[1])
@@ -58,7 +59,7 @@ def main():
     out=args.out if args.out.is_absolute() else root/args.out
     out.parent.mkdir(parents=True,exist_ok=True)
     payload={"schema_version":1,"generated_at":date.today().isoformat(),"repository":"https://github.com/icoolkj/skill","assets":records}
-    out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    out.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
     print(f"Generated {len(records)} provisional records: {out}")
     print("WARNING: records are provisional; source/license/quality/verification require review.")
 if __name__=="__main__": main()
