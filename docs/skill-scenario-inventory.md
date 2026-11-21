@@ -16,7 +16,7 @@
 | `skills/antinet-security-scan/` | ai-agents | 1 | 单入口目录，待引用检查 |
 | `skills/anything2explainer/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/archify/` | image-design | 1 | 单入口目录，待引用检查 |
-| `skills/article-illustrator/` | content-creation | 1 | 单入口目录，待引用检查 |
+| `skills/content-creation/article-illustrator/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/atutun-xhs-cover/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/awesome-jev/` | ai-agents | 1 | 单入口目录，待引用检查 |
 | `skills/bedtime-story/` | needs-review | 1 | 单入口目录，待引用检查 |
@@ -26,11 +26,11 @@
 | `skills/convert-documents-to-markdown/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/cy-carousel-skill/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/data-flow-skill/` | software-development | 1 | 单入口目录，待引用检查 |
-| `skills/data-storytelling/` | data-analysis | 1 | 单入口目录，待引用检查 |
+| `skills/data-analysis/data-storytelling/` | data-analysis | 1 | 单入口目录，待引用检查 |
 | `skills/diagram-design/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/digital-avatar-shopping-video/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/dream-video-prompt-generator/` | video-production | 1 | 单入口目录，待引用检查 |
-| `skills/ecommerce-copywriter/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
+| `skills/marketing-commerce/ecommerce-copywriter/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/ecommerce-full-pipeline/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/ecommerce-video-marketing/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/email-concierge/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
@@ -65,7 +65,7 @@
 | `skills/pet-commerce-creator/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/poetry-music-visual/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/pop-up-book-illustration/` | image-design | 1 | 单入口目录，待引用检查 |
-| `skills/ppt-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
+| `skills/office-productivity/ppt-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/ppt-roadshow-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/pptx-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/product-manager-toolkit/` | needs-review | 1 | 单入口目录，待引用检查 |
