@@ -4,11 +4,7 @@
     "core_skills": 26,
     "sub_skills": 30,
     "system_builtin": 6,
-    "last_updated": "2026-11-12",
-    "location": "D:\\tool\\skills",
-    "backup_location": "D:\\tool\\skills\\skill压缩文件",
-    "backup_coverage": "100%",
-    "repository": "https://github.com/anbeime/skill"
+    "last_updated": "2026-11-12"
   },
   "categories": {
     "内容创作与发布": {
