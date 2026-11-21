@@ -85,3 +85,26 @@
 - 所有被删除文件都有完全相同的保留副本，或明确属于操作系统元数据。
 - 不删除独立子 Skill、独立项目、运行依赖或不同版本。
 - 不在本轮合并主分支。
+
+## 全仓重复资源二次核查
+
+清理提交后，对当前工作分支的全部 4,321 个文件 Blob 做 SHA 级比较，发现 116 组相同内容（涉及 242 个路径）。这不是 116 组都应该删除：其中包含项目镜像、独立安装包的自包含资源、共享素材、空占位文件和真正重复的包内副本。
+
+已确认应保留、不自动删除的代表性类别：
+
+- **根目录与 `projects/companion-simple/` 镜像**：多个文件 SHA 相同，但两边至少 13 个对应文件内容不同，项目已发生分叉；不能把任意一侧作为纯副本删除。
+- **Agent Teams 与独立 Skill**：`antinet-agentteams/skills/` 与 `skills/antinet-*/` 中有相同执行脚本，分别属于工程集成和独立安装入口。
+- **内容创作套件**：`article-illustrator` 与 `content-creation-publisher` 的参考文件相同，可能是为了独立安装而自包含；微信/X 发布子技能共享剪贴板脚本，属于复用实现。
+- **独立 Skill 项目**：`cy-carousel-skill` 与 `native-subtitle-quote-image` 共享 GitHub Issue/Workflow 自动化模板；它们位于各自项目的 `.github` 下，不能因相同就删掉一边。
+- **素材副本**：多个应用目录共享头像/图片/字体等素材，必须结合构建路径和引用决定是否去重。
+- **空文件与占位文件**：`.gitkeep`、`.keep`、`.nojekyll` 等零字节文件可能用于保留目录或影响静态站点发布，不能按 SHA 重复规则删除。
+
+因此，本轮只删除了已确认的两个重复 Skill 入口、字幕 Skill 内部 10 个完全重复文件，以及 19 个 macOS AppleDouble 元数据文件。其他重复 Blob 全部保留并进入待核验范围。
+
+## 后续需要优先处理的结构问题
+
+1. 根目录与 `projects/companion-simple/` 存在较大的历史镜像关系，建议明确哪个是正式项目入口，再决定根目录文件的归属。
+2. `data/local_skills.json` 与 `public/data/local_skills.json` 当前内容相同，但同步脚本 `scripts/sync_frontend.py` 明确把前者作为主数据并覆盖后者；修改前必须先理解自动生成机制。
+3. `skills/handraw-style`、`content-creation-publisher`、`obsidian-skills-integrated` 等是集合型目录，不能按目录或重复文件数量简单扁平化。
+4. `infinitetalk` 与 `qiaomu-x-article-publisher` 有同名/镜像版本，需逐项对照入口、版本和引用。
+5. 根目录存在多份历史说明、发布稿和部署文档。先建立文档索引与主入口，不应仅凭文件名相似删除。
