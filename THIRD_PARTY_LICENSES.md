@@ -1,4 +1,6 @@
-# 第三方技能许可证清单（THIRD_PARTY_LICENSES）
+# 第三方技能许可证清单（历史审查记录）
+
+> **重要**：以下统计和处置记录截至 2026-11-02，是历史快照，不代表当前仓库中全部 Skill 的许可证状态。后续新增、更新或迁移的资产尚未完成逐项许可证复核；使用或再分发前必须核对实际文件与上游许可证。
 
 > 生成时间：2026-11-02 ｜ 范围：**随仓分发的 `skills/` 目录（81 个技能，其中第三方 65 个 / anbeime 自有 16 个）**
 > 最后更新：2026-11-02 已将 Proprietary 技能 `photo-abstract-editorial` 从 `skills/` 与 `public/data/skills.json`、`public/skills.html` 移除，备份置于仓库外 `_quarantine/`。
