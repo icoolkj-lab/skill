@@ -1,11 +1,11 @@
 # 🎯 技能商店 - Skill Store
 
-[![Stars](https://img.shields.io/github/stars/anbeime/skill?style=social)](https://github.com/anbeime/skill/stargazers)
-[![Forks](https://img.shields.io/github/forks/anbeime/skill?style=social)](https://github.com/anbeime/skill/network/members)
-[![Last Commit](https://img.shields.io/github/last-commit/anbeime/skill)](https://github.com/anbeime/skill/commits/main)
-[![Issues](https://img.shields.io/github/issues/anbeime/skill)](https://github.com/anbeime/skill/issues)
-[![License](https://img.shields.io/badge/license-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
-[![Auto Sync](https://img.shields.io/badge/auto--sync-24h-brightgreen)](https://github.com/anbeime/skill/blob/main/.github/workflows)
+[![Stars](https://img.shields.io/github/stars/icoolkj/skill?style=social)](https://github.com/icoolkj/skill/stargazers)
+[![Forks](https://img.shields.io/github/forks/icoolkj/skill?style=social)](https://github.com/icoolkj/skill/network/members)
+[![Last Commit](https://img.shields.io/github/last-commit/icoolkj/skill)](https://github.com/icoolkj/skill/commits/main)
+[![Issues](https://img.shields.io/github/issues/icoolkj/skill)](https://github.com/icoolkj/skill/issues)
+[![License](https://img.shields.io/badge/license-CC--BY--NC--4.0-blue)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Auto Sync](https://img.shields.io/badge/auto--sync-24h-brightgreen)](https://github.com/icoolkj/skill/blob/main/.github/workflows)
 
 收录最全、更新最快的AI Agent技能库，涵盖**文档处理、内容创作、编程开发、机器学习、自动化工作流**等多个领域的精选技能包。
 
@@ -13,11 +13,11 @@
 >
 > 🗂️ **Skill 资产治理**：查看 [资产管理目录](catalog/README.md)、[治理规范](docs/skill-asset-governance.md)、[初始审查报告](docs/repository-audit-initial.md)。可使用 `python scripts/build_skill_catalog.py` 生成待审核资产登记表。
 
-[![搜索索引](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=%E6%90%9C%E7%B4%A2%E7%B4%A2%E5%BC%95&color=blue&style=flat-square)](https://github.com/anbeime/skill)
-[![本地技能](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=%E6%9C%AC%E5%9C%B0%E6%8A%80%E8%83%BD&color=green&style=flat-square)](https://github.com/anbeime/skill)
-[![热门榜单](https://img.shields.io/badge/%E7%83%AD%E9%97%A8%E6%A6%9C%E5%8D%95-GitHub%20%E5%AE%9E%E6%97%B6-ec4899?style=flat-square)](https://github.com/anbeime/skill/blob/main/public/data/skills.json)
-[![备份覆盖](https://img.shields.io/badge/备份覆盖-100%25-success?style=flat-square)](https://github.com/anbeime/skill)
-[![自动更新](https://img.shields.io/badge/更新-每24小时-orange?style=flat-square)](https://github.com/anbeime/skill)
+[![搜索索引](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=%E6%90%9C%E7%B4%A2%E7%B4%A2%E5%BC%95&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
+[![本地技能](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=%E6%9C%AC%E5%9C%B0%E6%8A%80%E8%83%BD&color=green&style=flat-square)](https://github.com/icoolkj/skill)
+[![热门榜单](https://img.shields.io/badge/%E7%83%AD%E9%97%A8%E6%A6%9C%E5%8D%95-GitHub%20%E5%AE%9E%E6%97%B6-ec4899?style=flat-square)](https://github.com/icoolkj/skill/blob/main/public/data/skills.json)
+[![备份覆盖](https://img.shields.io/badge/备份覆盖-100%25-success?style=flat-square)](https://github.com/icoolkj/skill)
+[![自动更新](https://img.shields.io/badge/更新-每24小时-orange?style=flat-square)](https://github.com/icoolkj/skill)
 
 > 🎁 **知易多模型知识管家 · 免费试用预约** — 20+ 模型自由切换、技能市场、四色卡片知识库，留邮箱锁定免费试用名额，每周再收一份知易AI周刊。
 > [👉 立即预约](https://vcn9bv28ym2o.feishu.cn/share/base/shrcn9wdoM01PzUqdVKY0q73rnc) · [⭐ 知易开源版](https://github.com/anbeime/antinet)
@@ -193,7 +193,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/anbeime/skill.git
+git clone https://github.com/icoolkj/skill.git
 cd skill
 ```
 
@@ -347,10 +347,10 @@ python tools/skill_validator.py to-prompt skills/agent-team
 
 ## 🔗 相关链接
 
-- [GitHub仓库](https://github.com/anbeime/skill)
+- [GitHub仓库](https://github.com/icoolkj/skill)
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)（官方技能源仓库，6.5k+ stars）
 - [在线演示](https://skill.vercel.app)
-- [技能管理数据库](https://github.com/anbeime/skill/blob/main/docs/技能管理数据库.md)
+- [技能管理数据库](https://github.com/icoolkj/skill/blob/main/docs/技能管理数据库.md)
 
 ## 🤝 贡献
 
@@ -360,7 +360,7 @@ python tools/skill_validator.py to-prompt skills/agent-team
 
 发现了好用的 AI Agent 技能？欢迎提交！
 
-- **快速提交**：[创建 Issue 提交技能](https://github.com/anbeime/skill/issues/new?template=submit-skill.yml)
+- **快速提交**：[创建 Issue 提交技能](https://github.com/icoolkj/skill/issues/new?template=submit-skill.yml)
 - **PR 直接提交**：fork 仓库后复制 `skills/_template/` 创建技能，验证后提 PR
 - **想加入维护团队**：邮件 13632833907@qq.com 或开 Discussion
 
@@ -368,7 +368,7 @@ python tools/skill_validator.py to-prompt skills/agent-team
 
 感谢所有为这个项目做出贡献的伙伴：
 
-[![Contributors](https://contrib.rocks/image?repo=anbeime/skill)](https://github.com/anbeime/skill/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=icoolkj/skill)](https://github.com/icoolkj/skill/graphs/contributors)
 
 ## 🌐 兄弟项目
 
@@ -13064,7 +13064,7 @@ Common CLI flows:
 有任何问题、建议或合作需求，欢迎通过以下方式联系：
 
 - 🧠 **知易多模型知识管家**：[👉 免费试用预约](https://vcn9bv28ym2o.feishu.cn/share/base/shrcn9wdoM01PzUqdVKY0q73rnc)
-- 🐙 **GitHub Issues**：[提交Issue](https://github.com/anbeime/skill/issues)
+- 🐙 **GitHub Issues**：[提交Issue](https://github.com/icoolkj/skill/issues)
 - 💬 **微信交流群**：扫码加入（备注「技能」）
 - 📮 **公众号**：关注「TOPGO智能AI123」，每日AI工具与Agent实战干货
 

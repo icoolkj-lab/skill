@@ -8,7 +8,7 @@
 
 1. **复制模板**
    ```bash
-   cp -r skills/_template skills/your-skill/your-skill
+   cp -r templates/skill-template skills/your-skill
    ```
 
 2. **编辑 SKILL.md** — 替换所有占位符为实际内容
@@ -28,15 +28,14 @@
 
 ### 目录结构
 
-采用双重嵌套结构：
+采用当前仓库规范的技能目录结构（如有上游完整包结构，可保留其原有布局）：
 
 ```
 skills/
 └── your-skill/
-    └── your-skill/
-        ├── SKILL.md          ← 核心（必需）
-        ├── assets/           ← 图片等资源（可选）
-        └── references/       ← 参考文档（可选）
+    ├── SKILL.md          ← 核心（必需）
+    ├── assets/           ← 图片等资源（可选）
+    └── references/       ← 参考文档（可选）
 ```
 
 ### SKILL.md 要求
