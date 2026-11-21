@@ -167,6 +167,20 @@ python scripts/audit_skill_repository.py --json-out docs/reports/skill-inventory
 - `ai-agents/multi-agent-meeting`
 - `software-development/data-flow-skill`
 
+### 第三批：视频创作分类
+
+迁移 9 个目录，共 97 个文件：
+
+- `video-production/ecommerce-video-marketing`
+- `video-production/video-frame-extractor`
+- `video-production/video-transcript-downloader`
+- `video-production/video-recreation`
+- `video-production/video-creation-pro`
+- `video-production/video-creation-suite`
+- `video-production/video-creation-collaborator`
+- `video-production/digital-avatar-shopping-video`
+- `video-production/dream-video-prompt-generator`
+
 ### 下一阶段
 
 1. 完成剩余 Skill 分类和集合/子 Skill 识别。
