@@ -121,6 +121,18 @@ skill-suite/
 - `ai-agents/multi-agent-meeting`
 - `software-development/data-flow-skill`
 
+## 视频创作分类迁移
+
+- `video-production/ecommerce-video-marketing`
+- `video-production/video-frame-extractor`
+- `video-production/video-transcript-downloader`
+- `video-production/video-recreation`
+- `video-production/video-creation-pro`
+- `video-production/video-creation-suite`
+- `video-production/video-creation-collaborator`
+- `video-production/digital-avatar-shopping-video`
+- `video-production/dream-video-prompt-generator`
+
 ## 本仓库整理迁移策略
 
 当前仓库包含注册表、搜索索引、应用项目、同步脚本、工作流和历史引用。为避免破坏现有使用：
