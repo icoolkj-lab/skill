@@ -93,6 +93,22 @@ skill-suite/
 6. 不以同名、相似用途或文件哈希相同为唯一依据删除资产。
 7. 分类目录只表达主要应用场景；跨场景能力用标签表达，避免多份复制。
 
+## 当前已迁移目录
+
+以下独立 Skill 已按应用场景完成第一批迁移，内部结构保持原样：
+
+- `content-creation/article-illustrator`
+- `content-creation/viral-video-copywriting`
+- `marketing-commerce/ecommerce-copywriter`
+- `marketing-commerce/product-marketing-copywriter`
+- `office-productivity/ppt-generator`
+- `office-productivity/pptx-generator`
+- `office-productivity/ppt-roadshow-generator`
+- `data-analysis/data-storytelling`
+- `data-analysis/paper-analysis-assistant`
+- `data-analysis/stock-analysis`
+- `image-design/icon-generator`
+
 ## 本仓库整理迁移策略
 
 当前仓库包含注册表、搜索索引、应用项目、同步脚本、工作流和历史引用。为避免破坏现有使用：
