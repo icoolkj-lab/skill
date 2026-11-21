@@ -1,4 +1,7 @@
-# 技能仓库更新脚本
+# 历史技能清单快照
+
+> 历史清单，内容及数量可能过时。当前 curated skills 数据以 `data/local_skills.json`、`public/data/local_skills.json` 和 README 自动生成段为准。
+
 
 由于Excel数据量较大，我将直接基于已知的61个技能创建JSON数据文件。
 
