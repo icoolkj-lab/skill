@@ -13,7 +13,7 @@
 >
 > 🗂️ **Skill 资产治理**：查看 [资产管理目录](catalog/README.md)、[治理规范](docs/skill-asset-governance.md)、[初始审查报告](docs/repository-audit-initial.md)。可使用 `python scripts/build_skill_catalog.py` 生成待审核资产登记表。
 
-[![搜索索引](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=%E6%90%9C%E7%B4%A2%E7%B4%A2%E5%BC%95&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
+[![搜索索引](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Ficoolkj%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=%E6%90%9C%E7%B4%A2%E7%B4%A2%E5%BC%95&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
 [![本地技能](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=%E6%9C%AC%E5%9C%B0%E6%8A%80%E8%83%BD&color=green&style=flat-square)](https://github.com/icoolkj/skill)
 [![热门榜单](https://img.shields.io/badge/%E7%83%AD%E9%97%A8%E6%A6%9C%E5%8D%95-GitHub%20%E5%AE%9E%E6%97%B6-ec4899?style=flat-square)](https://github.com/icoolkj/skill/blob/main/public/data/skills.json)
 [![备份覆盖](https://img.shields.io/badge/备份覆盖-100%25-success?style=flat-square)](https://github.com/icoolkj/skill)
@@ -26,7 +26,7 @@
 
 <!-- AUTO-SYNC-STATS-START -->
 - **索引条目**（含待筛选）: 12,554 条
-- **本地技能（精选策展）**: 89 个
+- **本地技能（精选策展）**: 89 个（按技能名去重；分类展示共 90 项）
 - **搜索索引（skills.json）**: 268 个
 - **热门技能榜单**（按 Star 排序）: 87 个
 - **最后同步**: 2026-11-21 02:11（每日自动刷新）

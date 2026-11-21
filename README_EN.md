@@ -1,21 +1,21 @@
 # 🎯 Skill Store
 
-[![Stars](https://img.shields.io/github/stars/anbeime/skill?style=social)](https://github.com/anbeime/skill/stargazers)
-[![Forks](https://img.shields.io/github/forks/anbeime/skill?style=social)](https://github.com/anbeime/skill/network/members)
-[![Last Commit](https://img.shields.io/github/last-commit/anbeime/skill)](https://github.com/anbeime/skill/commits/main)
-[![Issues](https://img.shields.io/github/issues/anbeime/skill)](https://github.com/anbeime/skill/issues)
-[![License](https://img.shields.io/badge/license-CC--BY--4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
-[![Auto Sync](https://img.shields.io/badge/auto--sync-24h-brightgreen)](https://github.com/anbeime/skill/blob/main/.github/workflows)
+[![Stars](https://img.shields.io/github/stars/icoolkj/skill?style=social)](https://github.com/icoolkj/skill/stargazers)
+[![Forks](https://img.shields.io/github/forks/icoolkj/skill?style=social)](https://github.com/icoolkj/skill/network/members)
+[![Last Commit](https://img.shields.io/github/last-commit/icoolkj/skill)](https://github.com/icoolkj/skill/commits/main)
+[![Issues](https://img.shields.io/github/issues/icoolkj/skill)](https://github.com/icoolkj/skill/issues)
+[![License](https://img.shields.io/badge/license-CC--BY--NC--4.0-blue)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Auto Sync](https://img.shields.io/badge/auto--sync-24h-brightgreen)](https://github.com/icoolkj/skill/blob/main/.github/workflows)
 
 The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across **document processing, content creation, programming, machine learning, automated workflows**, and many more domains.
 
 [简体中文](README.md) | **English**
 
-[![Search Index](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=Search%20Index&color=blue&style=flat-square)](https://github.com/anbeime/skill)
-[![Local Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=Local%20Skills&color=green&style=flat-square)](https://github.com/anbeime/skill)
-[![Trending](https://img.shields.io/badge/Trending-GitHub%20Live-ec4899?style=flat-square)](https://github.com/anbeime/skill/blob/main/public/data/skills.json)
-[![Backup Coverage](https://img.shields.io/badge/Backup%20Coverage-100%25-success?style=flat-square)](https://github.com/anbeime/skill)
-[![Auto Update](https://img.shields.io/badge/Update-Every%2024h-orange?style=flat-square)](https://github.com/anbeime/skill)
+[![Search Index](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fpublic%2Fdata%2Fskills.json&query=total&label=Search%20Index&color=blue&style=flat-square)](https://github.com/icoolkj/skill)
+[![Local Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fanbeime%2Fskill%2Fmain%2Fdata%2Flocal_skills.json&query=metadata.total_skills&label=Local%20Skills&color=green&style=flat-square)](https://github.com/icoolkj/skill)
+[![Trending](https://img.shields.io/badge/Trending-GitHub%20Live-ec4899?style=flat-square)](https://github.com/icoolkj/skill/blob/main/public/data/skills.json)
+[![Backup Coverage](https://img.shields.io/badge/Backup%20Coverage-100%25-success?style=flat-square)](https://github.com/icoolkj/skill)
+[![Auto Update](https://img.shields.io/badge/Update-Every%2024h-orange?style=flat-square)](https://github.com/icoolkj/skill)
 
 ## 📊 Statistics
 
@@ -157,7 +157,7 @@ Supports JSON and CSV export for data analysis and downstream use.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/anbeime/skill.git
+git clone https://github.com/icoolkj/skill.git
 cd skill
 ```
 
@@ -308,10 +308,10 @@ See the [tool documentation](tools/README.md).
 
 ## 🔗 Related Links
 
-- [GitHub Repository](https://github.com/anbeime/skill)
+- [GitHub Repository](https://github.com/icoolkj/skill)
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) (official skill source repository, 6.5k+ stars)
 - [Online Demo](https://skill.vercel.app)
-- [Skill Management Database](https://github.com/anbeime/skill/blob/main/docs/%E6%8A%80%E8%83%BD%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93.md)
+- [Skill Management Database](https://github.com/icoolkj/skill/blob/main/docs/%E6%8A%80%E8%83%BD%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE%E5%BA%93.md)
 
 ## 🤝 Contributing
 
@@ -321,7 +321,7 @@ Issues and Pull Requests are welcome! See the [Contributing Guide](CONTRIBUTING.
 
 Discovered a useful AI Agent skill? Submit it here!
 
-- **Quick submit**: [Create an Issue to submit a skill](https://github.com/anbeime/skill/issues/new?template=submit-skill.yml)
+- **Quick submit**: [Create an Issue to submit a skill](https://github.com/icoolkj/skill/issues/new?template=submit-skill.yml)
 - **Direct PR**: fork the repo, copy `skills/_template/` to create your skill, validate, then open a PR
 - **Join the maintainers**: email 13632833907@qq.com or open a Discussion
 
@@ -329,7 +329,7 @@ Discovered a useful AI Agent skill? Submit it here!
 
 Thanks to everyone who has contributed to this project:
 
-[![Contributors](https://contrib.rocks/image?repo=anbeime/skill)](https://github.com/anbeime/skill/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=icoolkj/skill)](https://github.com/icoolkj/skill/graphs/contributors)
 
 ## 🌐 Sister Projects
 

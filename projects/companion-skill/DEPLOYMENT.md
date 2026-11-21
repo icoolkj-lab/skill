@@ -46,7 +46,7 @@
 #### 步骤 2：克隆项目
 
 ```bash
-git clone https://github.com/anbeime/skill.git
+git clone https://github.com/icoolkj/skill.git
 cd skill/projects/companion-skill
 ```
 
@@ -298,13 +298,13 @@ vercel
 1. 查看项目 README
 2. 检查 API Key 配置
 3. 查看日志输出
-4. 提交 GitHub Issue：https://github.com/anbeime/skill/issues
+4. 提交 GitHub Issue：https://github.com/icoolkj/skill/issues
 
 ---
 
 ## 🔗 相关链接
 
-- **GitHub 仓库**：https://github.com/anbeime/skill
+- **GitHub 仓库**：https://github.com/icoolkj/skill
 - **在线演示**：https://skill.miyucaicai.cn/chat-demo.html
 - **项目展示**：https://skill.miyucaicai.cn/projects.html
 - **技能商店**：https://skill.miyucaicai.cn/
@@ -313,8 +313,8 @@ vercel
 
 ## 🤝 需要帮助？
 
-- 💬 GitHub Discussions：https://github.com/anbeime/skill/discussions
-- 🐛 报告问题：https://github.com/anbeime/skill/issues
+- 💬 GitHub Discussions：https://github.com/icoolkj/skill/discussions
+- 🐛 报告问题：https://github.com/icoolkj/skill/issues
 - 📧 邮件联系：（在 GitHub Profile 查看）
 
 ---

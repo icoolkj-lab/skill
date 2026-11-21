@@ -208,3 +208,8 @@ MIT License
 - OpenClaw 框架
 - 智谱 AI GLM 系列模型
 - Clawra 项目灵感
+
+
+## 部署文档
+
+- [部署指南](DEPLOYMENT.md)：Companion Skill 的完整部署步骤。
