@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - "catalog/**"
+      - "data/local_skills.json"
+      - "public/data/local_skills.json"
+      - "README.md"
       - "scripts/**"
       - "**/SKILL.md"
       - ".github/workflows/skill-catalog-validation.yml"
@@ -24,3 +27,4 @@ jobs:
       - run: python scripts/build_skill_catalog.py
       - run: python scripts/validate_skill_catalog.py
       - run: python scripts/check_skill_mirrors.py
+      - run: python scripts/validate_local_skill_data.py
