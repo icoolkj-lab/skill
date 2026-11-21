@@ -131,3 +131,11 @@
 - 根 README 已链接仓库结构说明、清理报告和维护审计指南。
 - 只读审计脚本 `scripts/audit_skill_repository.py` 已加入仓库；它不会自动删除或移动文件。
 - 最新扫描确认：无完全重复的 `SKILL.md` Blob、无 macOS 元数据残留。
+
+### `infinitetalk` 镜像副本已清理
+
+在确认仓库采用双层 Skill 目录约定、外层与内层的 4 个支持文件字节完全相同，且内层目录包含完整安装包后，本轮已删除外层 5 个重复文件（外层 `SKILL.md`、3 份 references、1 个推理脚本），统一保留：
+
+`skills/infinitetalk/infinitetalk/`
+
+内层 `SKILL.md` 的描述与外层只有文案差异，能力正文和配套文件一致。后续若发现外部脚本硬编码引用旧的外层路径，再按引用证据补兼容，不保留整套重复副本。
