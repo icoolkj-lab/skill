@@ -64,12 +64,12 @@
 - 18 个分类
 - 分类条目 90 条
 - 去重后的名称 89 个
-- `srt-whiteboard-animation` 重复登记 1 次
+- `srt-whiteboard-animation` 同时出现在“数字人与视频配音”和“收录开源技能”两个分类中，属于跨分类收录；总分类条目 90、唯一名称 89，不能直接当作错误重复删除
 - `last_updated` 为 2026-11-12
 - `repository` 字段仍指向上游 `anbeime/skill`
 - `core_skills + sub_skills + system_builtin = 62`，与 `total_skills = 89` 不一致，另有 27 项未在这三个统计字段中解释
 
-登记的 89 个名称与实际 134 份 Skill 文档不是同一统计口径。当前没有直接重写登记表，以免把别名、父级集合、子 Skill 和工程项目误合并。
+登记的 89 个名称与实际 134 份 Skill 文档不是同一统计口径。当前没有直接重写登记表，以免把别名、父级集合、子 Skill 和工程项目误合并。另经复核，`srt-whiteboard-animation` 是跨两个分类展示，不是同一分类内的误重复，应保留这种多分类能力。
 
 ## 下一阶段建议
 
