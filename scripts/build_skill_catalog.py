@@ -44,8 +44,11 @@ def main():
         parts=Path(rel).parts
         category=parts[1] if len(parts)>2 and parts[0]=="skills" and parts[1] in CATEGORY_MAP else "uncategorized"
         name=fm.get("name") or Path(rel).parent.name
+        asset_type = "template" if rel.startswith("templates/") else ("project" if rel.startswith("projects/") else "skill")
+        if asset_type == "template":
+            category = "skill-development"
         records.append({
-            "id":asset_id(name,rel),"asset_type":"skill","name":name,
+            "id":asset_id(name,rel),"asset_type":asset_type,"name":name,
             "description":fm.get("description",""),"path":rel,"category":category,
             "tags":[],"parent_id":None,"child_ids":[],
             "source":{"repository":None,"url":None,"commit_or_version":None,"collected_at":None,"author":None,"collection_method":None,"notes":"Provisional record; source metadata requires manual verification."},
