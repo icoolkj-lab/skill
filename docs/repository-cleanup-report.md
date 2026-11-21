@@ -108,3 +108,19 @@
 3. `skills/handraw-style`、`content-creation-publisher`、`obsidian-skills-integrated` 等是集合型目录，不能按目录或重复文件数量简单扁平化。
 4. `infinitetalk` 与 `qiaomu-x-article-publisher` 有同名/镜像版本，需逐项对照入口、版本和引用。
 5. 根目录存在多份历史说明、发布稿和部署文档。先建立文档索引与主入口，不应仅凭文件名相似删除。
+
+## 同名不同内容版本核查
+
+### `infinitetalk`
+
+- 两份 `SKILL.md` 的 `name` 都是 `infinitetalk`，正文 151 行，仅 frontmatter 的 description 不同。
+- 外层 `skills/infinitetalk/` 与内层 `skills/infinitetalk/infinitetalk/` 的 5 个对应文件中，4 个（3 份 references + 1 个推理脚本）完全相同，只有 `SKILL.md` 描述不同。
+- 两份入口均引用各自相对目录下的 references/scripts；因此它们是完整镜像包，不是两个不同能力。
+- **处理决定：暂不删除任何一套**。先确认仓库安装/索引消费路径是否同时依赖外层和内层入口，再统一为一个规范入口。候选规范路径为双层结构 `skills/infinitetalk/infinitetalk/`。
+
+### `x-article-publisher`
+
+- 两份 `SKILL.md` 的 `name` 都是 `x-article-publisher`，正文各 267 行，仅 4 行有差异（description 及浏览器显示/无头模式示例）。
+- 外层与内层项目包有 16/18 个对应文件：9 个完全相同，7 个内容不同，内层另有 `CONTRIBUTING.md`、`README_FULL.md`。
+- 两套目录包含独立的 README、CHANGELOG、LICENSE、metadata 与发布脚本；虽然能力重叠，但存在不同版本/维护状态的迹象。
+- **处理决定：保留两套**，暂按“同一 Skill 的两个版本/分支资产”记录，后续核对版本号、来源和功能差异后再确定主版本。不能把它们当作无差别重复直接删除。
