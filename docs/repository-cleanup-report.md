@@ -127,14 +127,38 @@ python scripts/audit_skill_repository.py
 python scripts/audit_skill_repository.py --json-out docs/reports/skill-inventory.json
 ```
 
-## 8. 后续整理顺序
+## 8. Skills 场景化目录迁移
 
-1. 读取剩余 `SKILL.md` 的 `name`、`description` 和正文，建立全量 Skill 目录。
-2. 区分独立 Skill、父级集合、子 Skill、模板、系统内置项、工程型 Agent 和普通项目。
-3. 逐项核对别名、同名版本和登记缺失项。
-4. 明确根目录与 `projects/companion-simple/` 的正式项目归属。
-5. 研究 `data/local_skills.json`、`public/data/local_skills.json` 和同步脚本的主从关系，再统一登记数据。
-6. 完成路径引用扫描、Skill Validator 和各项目测试后，再决定是否迁移目录或合并项目。
+已建立：
+- `skills/README.md`：分类体系、Skill 包规范、元数据和迁移原则。
+- `docs/skill-scenario-inventory.md`：91 个含 `SKILL.md` 一级目录的初步场景分类清单。
+
+### 已完成的第一批迁移
+
+将 11 个独立 Skill 目录迁移至场景分类目录，内部文件和子目录结构保持不变：
+
+| 原目录 | 新目录 |
+|---|---|
+| `skills/article-illustrator/` | `skills/content-creation/article-illustrator/` |
+| `skills/viral-video-copywriting/` | `skills/content-creation/viral-video-copywriting/` |
+| `skills/ecommerce-copywriter/` | `skills/marketing-commerce/ecommerce-copywriter/` |
+| `skills/product-marketing-copywriter/` | `skills/marketing-commerce/product-marketing-copywriter/` |
+| `skills/ppt-generator/` | `skills/office-productivity/ppt-generator/` |
+| `skills/pptx-generator/` | `skills/office-productivity/pptx-generator/` |
+| `skills/ppt-roadshow-generator/` | `skills/office-productivity/ppt-roadshow-generator/` |
+| `skills/data-storytelling/` | `skills/data-analysis/data-storytelling/` |
+| `skills/paper-analysis-assistant/` | `skills/data-analysis/paper-analysis-assistant/` |
+| `skills/stock-analysis/` | `skills/data-analysis/stock-analysis/` |
+| `skills/icon-generator/` | `skills/image-design/icon-generator/` |
+
+已核验新目录存在、原路径文件已移除；共迁移 62 个文件（含全部 Skill 文件和配套资源）。本阶段尚未完成全仓路径引用和安装流程的兼容性验证，因此迁移仍处于整理分支，不能合并主分支。
+
+### 下一阶段
+
+1. 完成剩余 Skill 分类和集合/子 Skill 识别。
+2. 扫描所有文档、注册表、脚本、工作流、安装命令与相对路径，修复迁移引用。
+3. 对每个迁移批次验证 Skill Validator、资源路径和自动同步流程。
+4. 分批迁移更多目录；集合型、项目型和存在多版本关系的目录优先保留原结构，除非确认迁移边界。
 
 ## 9. 验收原则
 
