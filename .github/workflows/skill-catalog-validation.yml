@@ -19,6 +19,13 @@ on:
       - "**/SKILL.md"
       - ".github/workflows/skill-catalog-validation.yml"
   workflow_dispatch:
+permissions:
+  contents: write
+
+concurrency:
+  group: skill-catalog-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -36,3 +43,15 @@ jobs:
           name: provisional-skill-catalog-${{ github.sha }}
           path: catalog/registry.json
           if-no-files-found: error
+      - name: Commit updated catalog snapshot on main
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet -- catalog/registry.json; then
+            echo "Catalog registry is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/registry.json
+          git commit -m "chore(catalog): refresh provisional registry [skip ci]"
+          git push
