@@ -1,0 +1,13 @@
+# 办公与文档
+
+本分类用于按应用场景浏览技能。以下为当前已迁移至本分类的 Skill；全仓迁移仍在进行中。
+
+## 已迁移 Skill
+
+- [`ppt-generator`](./ppt-generator/)
+- [`pptx-generator`](./pptx-generator/)
+- [`ppt-roadshow-generator`](./ppt-roadshow-generator/)
+- [`convert-documents-to-markdown`](./convert-documents-to-markdown/)
+- [`pdf-processing-pro`](./pdf-processing-pro/)
+
+更多技能将经过场景审计后逐批迁入。请参阅 [Skills 目录规范](../README.md) 与 [全量场景清单](../../docs/skill-scenario-inventory.md)。
