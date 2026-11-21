@@ -151,7 +151,7 @@ python scripts/audit_skill_repository.py --json-out docs/reports/skill-inventory
 | `skills/stock-analysis/` | `skills/data-analysis/stock-analysis/` |
 | `skills/icon-generator/` | `skills/image-design/icon-generator/` |
 
-已核验新目录存在、原路径文件已移除；共迁移 62 个文件（含全部 Skill 文件和配套资源）。本阶段尚未完成全仓路径引用和安装流程的兼容性验证，因此迁移仍处于整理分支，不能合并主分支。
+已核验新目录存在、原路径文件已移除；共迁移 60 个文件（含全部 Skill 文件和配套资源）。本阶段尚未完成全仓路径引用和安装流程的兼容性验证，因此迁移仍处于整理分支，不能合并主分支。
 
 ### 下一阶段
 
