@@ -41,7 +41,7 @@
 | `skills/handraw-style/` | image-design | 23 | 集合/嵌套结构，迁移前需核验 |
 | `skills/historical-interview-scripts/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/historical-science-video-prod/` | video-production | 1 | 单入口目录，待引用检查 |
-| `skills/icon-generator/` | image-design | 1 | 单入口目录，待引用检查 |
+| `skills/image-design/icon-generator/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/img2threejs/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/infinitetalk/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/infinitetalk-shopping-avatar/` | video-production | 1 | 单入口目录，待引用检查 |
@@ -60,16 +60,16 @@
 | `skills/native-subtitle-quote-image/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/obsidian-skills-integrated/` | knowledge-management | 4 | 集合/嵌套结构，迁移前需核验 |
 | `skills/ontoly-software-graph/` | software-development | 1 | 单入口目录，待引用检查 |
-| `skills/paper-analysis-assistant/` | data-analysis | 1 | 单入口目录，待引用检查 |
+| `skills/data-analysis/paper-analysis-assistant/` | data-analysis | 1 | 单入口目录，待引用检查 |
 | `skills/pdf-processing-pro/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/pet-commerce-creator/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/poetry-music-visual/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/pop-up-book-illustration/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/office-productivity/ppt-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
-| `skills/ppt-roadshow-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
-| `skills/pptx-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
+| `skills/office-productivity/ppt-roadshow-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
+| `skills/office-productivity/pptx-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/product-manager-toolkit/` | needs-review | 1 | 单入口目录，待引用检查 |
-| `skills/product-marketing-copywriter/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
+| `skills/marketing-commerce/product-marketing-copywriter/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/product-video-creator/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/qiaomu-x-article-publisher/` | content-creation | 2 | 集合/嵌套结构，迁移前需核验 |
 | `skills/qwen3-asr-assistant/` | needs-review | 1 | 单入口目录，待引用检查 |
@@ -77,7 +77,7 @@
 | `skills/remotion-video-enhancer/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/scrollytelling-web/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/srt-whiteboard-animation/` | video-production | 1 | 单入口目录，待引用检查 |
-| `skills/stock-analysis/` | data-analysis | 1 | 单入口目录，待引用检查 |
+| `skills/data-analysis/stock-analysis/` | data-analysis | 1 | 单入口目录，待引用检查 |
 | `skills/tailored-resume-generator/` | needs-review | 1 | 单入口目录，待引用检查 |
 | `skills/three-body-video-creator/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/threejs-scroll-worlds/` | image-design | 1 | 单入口目录，待引用检查 |
@@ -88,7 +88,7 @@
 | `skills/video-frame-extractor/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/video-recreation/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/video-transcript-downloader/` | video-production | 1 | 单入口目录，待引用检查 |
-| `skills/viral-video-copywriting/` | content-creation | 1 | 单入口目录，待引用检查 |
+| `skills/content-creation/viral-video-copywriting/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/voltagent-awesome-design-md/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/web-design-analyzer/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/web-to-app/` | software-development | 1 | 单入口目录，待引用检查 |
