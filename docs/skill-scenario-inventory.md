@@ -6,7 +6,7 @@
 |---|---|---:|---|
 | `skills/RuiC-card-skill/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/_template/` | skill-development | 1 | 单入口目录，待引用检查 |
-| `skills/agent-team/` | ai-agents | 1 | 单入口目录，待引用检查 |
+| `skills/ai-agents/agent-team/` | ai-agents | 1 | 单入口目录，待引用检查 |
 | `skills/agentkit-multimedia-shopping/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/anatomy/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/ancient-rap-battle/` | video-production | 1 | 单入口目录，待引用检查 |
@@ -22,16 +22,16 @@
 | `skills/bedtime-story/` | needs-review | 1 | 单入口目录，待引用检查 |
 | `skills/chrome-automation/` | software-development | 1 | 单入口目录，待引用检查 |
 | `skills/content-creation-publisher/` | content-creation | 6 | 集合/嵌套结构，迁移前需核验 |
-| `skills/content-research-writer/` | content-creation | 1 | 单入口目录，待引用检查 |
-| `skills/convert-documents-to-markdown/` | office-productivity | 1 | 单入口目录，待引用检查 |
+| `skills/content-creation/content-research-writer/` | content-creation | 1 | 单入口目录，待引用检查 |
+| `skills/office-productivity/convert-documents-to-markdown/` | office-productivity | 1 | 单入口目录，待引用检查 |
 | `skills/cy-carousel-skill/` | content-creation | 1 | 单入口目录，待引用检查 |
-| `skills/data-flow-skill/` | software-development | 1 | 单入口目录，待引用检查 |
+| `skills/software-development/data-flow-skill/` | software-development | 1 | 单入口目录，待引用检查 |
 | `skills/data-analysis/data-storytelling/` | data-analysis | 1 | 单入口目录，待引用检查 |
 | `skills/diagram-design/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/digital-avatar-shopping-video/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/dream-video-prompt-generator/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/marketing-commerce/ecommerce-copywriter/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
-| `skills/ecommerce-full-pipeline/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
+| `skills/marketing-commerce/ecommerce-full-pipeline/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/ecommerce-video-marketing/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/email-concierge/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/expert-prompt-migrator/` | software-development | 1 | 单入口目录，待引用检查 |
@@ -55,14 +55,14 @@
 | `skills/machine-skill/` | software-development | 1 | 单入口目录，待引用检查 |
 | `skills/media-processor/` | software-development | 1 | 单入口目录，待引用检查 |
 | `skills/moltbook/` | content-creation | 1 | 单入口目录，待引用检查 |
-| `skills/multi-agent-meeting/` | ai-agents | 1 | 单入口目录，待引用检查 |
+| `skills/ai-agents/multi-agent-meeting/` | ai-agents | 1 | 单入口目录，待引用检查 |
 | `skills/nanobanana-ppt-visualizer/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/native-subtitle-quote-image/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/obsidian-skills-integrated/` | knowledge-management | 4 | 集合/嵌套结构，迁移前需核验 |
 | `skills/ontoly-software-graph/` | software-development | 1 | 单入口目录，待引用检查 |
 | `skills/data-analysis/paper-analysis-assistant/` | data-analysis | 1 | 单入口目录，待引用检查 |
-| `skills/pdf-processing-pro/` | office-productivity | 1 | 单入口目录，待引用检查 |
-| `skills/pet-commerce-creator/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
+| `skills/office-productivity/pdf-processing-pro/` | office-productivity | 1 | 单入口目录，待引用检查 |
+| `skills/marketing-commerce/pet-commerce-creator/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 | `skills/poetry-music-visual/` | video-production | 1 | 单入口目录，待引用检查 |
 | `skills/pop-up-book-illustration/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/office-productivity/ppt-generator/` | office-productivity | 1 | 单入口目录，待引用检查 |
@@ -92,7 +92,7 @@
 | `skills/voltagent-awesome-design-md/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/web-design-analyzer/` | image-design | 1 | 单入口目录，待引用检查 |
 | `skills/web-to-app/` | software-development | 1 | 单入口目录，待引用检查 |
-| `skills/wechat-hotspot-publisher/` | content-creation | 1 | 单入口目录，待引用检查 |
+| `skills/content-creation/wechat-hotspot-publisher/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/wechatsync-publisher/` | content-creation | 1 | 单入口目录，待引用检查 |
 | `skills/xiaohongshu-makeup/` | marketing-commerce | 1 | 单入口目录，待引用检查 |
 
