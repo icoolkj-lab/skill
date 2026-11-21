@@ -2,11 +2,11 @@
 name: skill-template
 description: 技能创建模板。复制此目录并修改 SKILL.md 即可创建新技能。请将所有 <占位符> 替换为实际内容。
 version: 1.0.0
-author: your-name
+author: <作者或组织>
 tags:
   - template
   - example
-license: MIT
+license: <适用许可证>
 ---
 
 # <技能标题>
