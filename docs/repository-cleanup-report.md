@@ -139,3 +139,5 @@
 `skills/infinitetalk/infinitetalk/`
 
 内层 `SKILL.md` 的描述与外层只有文案差异，能力正文和配套文件一致。后续若发现外部脚本硬编码引用旧的外层路径，再按引用证据补兼容，不保留整套重复副本。
+
+此外，已在根目录 `.gitignore` 的 OS 区块补充 `__MACOSX/` 和 `._*` 忽略规则，降低 macOS 压缩包元数据再次进入仓库的概率；原有 `.DS_Store`、`Thumbs.db` 规则保留。
