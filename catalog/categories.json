@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "content-creation",
+      "name": "内容创作",
+      "description": "写作、选题、文章、社媒内容与发布"
+    },
+    {
+      "id": "video-production",
+      "name": "视频创作",
+      "description": "视频策划、脚本、分镜、生成、剪辑、字幕"
+    },
+    {
+      "id": "image-design",
+      "name": "图片与视觉设计",
+      "description": "图像生成、海报、封面、插画、品牌和图表"
+    },
+    {
+      "id": "office-productivity",
+      "name": "办公与文档",
+      "description": "文档、PDF、PPT、表格和转换"
+    },
+    {
+      "id": "software-development",
+      "name": "软件开发",
+      "description": "编码、工程、调试、测试与开发辅助"
+    },
+    {
+      "id": "ai-agents",
+      "name": "AI Agent 与协作",
+      "description": "Agent、工作流、编排和多智能体"
+    },
+    {
+      "id": "data-analysis",
+      "name": "数据分析与研究",
+      "description": "分析、研究、可视化和报告"
+    },
+    {
+      "id": "marketing-commerce",
+      "name": "营销与商业",
+      "description": "电商、营销、销售、运营与商业内容"
+    },
+    {
+      "id": "knowledge-management",
+      "name": "知识管理",
+      "description": "知识库、笔记、检索、信息组织"
+    },
+    {
+      "id": "automation-integration",
+      "name": "自动化与集成",
+      "description": "浏览器、API、平台操作和自动化"
+    },
+    {
+      "id": "professional-domains",
+      "name": "专业行业应用",
+      "description": "法律、金融、医疗、教育等专业领域"
+    },
+    {
+      "id": "skill-development",
+      "name": "Skill 开发与管理",
+      "description": "技能开发、测试、验证、治理和迁移"
+    },
+    {
+      "id": "uncategorized",
+      "name": "待分类",
+      "description": "尚未完成场景判定的资产"
+    }
+  ]
+}

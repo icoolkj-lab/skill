@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "tag_rules": {
+    "format": "lowercase kebab-case",
+    "avoid_synonyms": true,
+    "prefer_specific_tags": true,
+    "maximum_per_asset": 12
+  },
+  "tags": []
+}
