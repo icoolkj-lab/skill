@@ -2,7 +2,8 @@
 
 This catalog is the authoritative management layer for the collected Skill assets in this repository.
 
-- `registry.json`: machine-readable records for each managed asset.
+- `registry.json`: checked-in registry snapshot (currently an empty baseline; do not treat it as a completed inventory).
+- CI builds a provisional registry from all discovered `SKILL.md` files, validates it, and uploads it as a workflow artifact. The artifact is a review aid, not a license/quality audit.
 - `schema/skill-record.schema.json`: JSON Schema for registry records.
 - `categories.json`: controlled category vocabulary.
 - `tags.json`: tag vocabulary and guidance.
