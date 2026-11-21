@@ -9,7 +9,7 @@
 
 收录最全、更新最快的AI Agent技能库，涵盖**文档处理、内容创作、编程开发、机器学习、自动化工作流**等多个领域的精选技能包。
 
-> 📁 **仓库目录整理进行中**：Skills 按应用场景逐批迁移，查看 [目录规范](skills/README.md)、[场景分类清单](docs/skill-scenario-inventory.md) 与 [整理进度报告](docs/repository-cleanup-report.md)。
+> 📁 **仓库整理**：保留各 Skill 的原始完整包与依赖结构，逐步完善目录、索引和质量检查；不进行无依据的批量搬迁或删除。查看 [目录规范](skills/README.md) 与 [资产管理目录](catalog/README.md)。
 >
 > 🗂️ **Skill 资产治理**：查看 [资产管理目录](catalog/README.md)、[治理规范](docs/skill-asset-governance.md)、[初始审查报告](docs/repository-audit-initial.md)。可使用 `python scripts/build_skill_catalog.py` 生成待审核资产登记表。
 
