@@ -12,6 +12,9 @@ on:
   pull_request:
     paths:
       - "catalog/**"
+      - "data/local_skills.json"
+      - "public/data/local_skills.json"
+      - "README.md"
       - "scripts/**"
       - "**/SKILL.md"
       - ".github/workflows/skill-catalog-validation.yml"
