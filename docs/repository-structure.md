@@ -1,40 +1,50 @@
-# 仓库结构说明
+# Skill 仓库结构说明
 
-本仓库同时包含 Skill 源码、技能集合、完整 Agent 项目、技能索引数据和技能商店应用。它不是单一的 Skill 文件夹，因此整理时应区分“可调用的 Skill”和“支撑项目/数据”。
+本仓库以 **Skill 资产** 为核心。所有技能均按照应用场景归类，目录不再设置“独立项目”分类。
 
 ## 一级目录
 
-| 路径 | 用途 | 整理原则 |
-|---|---|---|
-| `skills/` | 主要 Skill 源码区，包含独立 Skill、父级集合和子 Skill | 保持现有路径，按 `SKILL.md` 的实际功能建立目录索引；不能把每个一级目录都直接算作一个 Skill |
-| `projects/` | 完整应用、Agent 和项目级示例 | 独立维护项目边界；与根目录同名文件即使内容相同，也要先核对版本关系 |
-| `antinet-agentteams/` | Agent Teams 工程及其内嵌 Skill | 保留工程内可独立运行的实现；与 `skills/antinet-*` 的镜像文件暂不合并 |
-| `my-skills/` | 个人/自研 Skill | 保留来源和项目结构，不混入第三方 Skill 集合 |
-| `data/` | 本地技能登记、搜索数据和同步状态 | 作为数据源维护；变更前需核对 `public/data/` 与同步脚本 |
-| `public/` | 技能商店前端和公开数据 | 保持前端读取路径稳定 |
-| `scripts/` | 同步、索引生成和自动化脚本 | 变更前检查 GitHub Actions 的调用路径 |
-| `tools/` | Skill 校验工具 | 作为开发工具维护 |
-| `docs/` | 使用规范、项目文档和审计报告 | 新增仓库级说明统一放在这里 |
-| `finance-skills/` | 财务领域技能的辅助材料/配置 | 先核实是否为完整 Skill，再决定是否迁移 |
-| `templates/`、`images/` | 模板和视觉资源 | 按引用关系保留 |
+| 路径 | 用途 |
+|---|---|
+| `skills/` | 全部 Skill 源码、技能集合与子 Skill，按应用场景分类 |
+| `data/` | 技能登记数据、搜索索引和同步数据 |
+| `public/` | 技能商店前端及公开数据 |
+| `scripts/` | 索引同步、整理、维护及自动化脚本 |
+| `tools/` | Skill 验证、开发辅助工具 |
+| `docs/` | Skill 使用规范、场景清单、审计和维护文档 |
+| `templates/` | Skill 创建模板及通用模板资源 |
+| `images/` | 文档与仓库展示所需图片 |
+| `.github/` | 仓库工作流、自动化配置及贡献模板 |
 
-## 根目录文件
+## Skill 场景分类
 
-根目录保留项目入口、运行脚本、GitHub 配置、许可证、同步索引及兼容性文档。当前存在多份历史 README、部署说明和平台上架稿。它们用途不同，不能仅因文件名相似就批量删除或改名。
+`skills/` 采用以下场景分类：
 
-## Skill 目录识别规则
+- `content-creation/`：内容创作
+- `video-production/`：视频创作
+- `image-design/`：图片与视觉设计
+- `office-productivity/`：办公与文档
+- `software-development/`：软件开发
+- `ai-agents/`：AI Agent 与协作
+- `data-analysis/`：数据分析与研究
+- `marketing-commerce/`：营销与商业
+- `knowledge-management/`：知识管理
+- `automation-integration/`：自动化与集成
+- `professional-domains/`：专业行业应用
+- `skill-development/`：Skill 开发与管理
 
-1. 以实际 `SKILL.md` 为识别入口，不以目录名或登记表名称单独判断。
-2. 一个一级目录可能是集合容器，内部有多个独立子 Skill。
-3. 父级 `SKILL.md` 与子级 `SKILL.md` 可以分别承担总入口和子能力，不视为重复。
-4. `SKILL.md` 内容完全相同才属于文件级重复；同名但内容不同的文件必须先做版本核对。
-5. 没有 `SKILL.md` 的工程目录可作为 Agent/项目资产登记，但不应冒充标准 Skill。
+## Skill 资产组织规则
 
-## 推荐维护约定
+1. 每项 Skill 归入最适合其主要应用场景的分类。
+2. 独立 Skill 保留自己的入口 `SKILL.md` 与必要脚本、references、assets、examples。
+3. Skill 集合及多子技能结构保留父级入口和内部子技能，不强行扁平化。
+4. 完整代码、工具或素材如果是 Skill 的运行依赖，放在该 Skill 包内。
+5. 无法合理归属于 Skill 的非技能内容，需审查其用途；不为其建立“项目”分类。
+6. 同名不同版本或重复文件，先核实内容、来源、引用和安装关系再决定合并或删除。
 
-- 新 Skill 按 `skills/README.md` 的应用场景分类规范组织；目录迁移按阶段执行，避免破坏旧路径。
-- `skills/README.md` 是 Skill 目录分类、结构、元数据和迁移规则的规范入口。
-- 集合型 Skill 在集合目录下保留父级入口和子 Skill，不将子 Skill 扁平化。
-- 不将项目运行代码、前端资源和索引 JSON 混放到 Skill 源码目录。
-- 不删除仅因相同 SHA 而重复的资源文件；先确认它们不是独立项目的打包副本或运行时依赖。
-- 目录迁移必须同步更新 README、索引 JSON、工作流、脚本、安装说明和相对路径。
+## 迁移约定
+
+- 迁移按场景分批进行，保留 Skill 内部相对结构。
+- 同步更新 README、登记数据、脚本、工作流、安装说明和路径引用。
+- 分类目录 README 提供场景介绍和技能导航。
+- 全量迁移及引用验证完成后，统一整理主分支目录结构。
