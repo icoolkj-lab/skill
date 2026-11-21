@@ -247,6 +247,8 @@ ls docs/
 
 ## 📖 文档
 
+- [仓库结构说明](docs/repository-structure.md) - 了解 Skill、项目、索引和工具目录的边界
+- [仓库清理与去重报告](docs/repository-cleanup-report.md) - 本轮清理范围、删除记录和待核验项
 - [技能管理数据库](docs/技能管理数据库.md) - 完整的技能索引和说明
 - [技能清理与迁移指南](docs/技能清理与迁移指南.md) - 技能迁移和备份指南
 - [技能数量差异分析](docs/技能数量差异分析报告.md) - 技能数量统计分析
