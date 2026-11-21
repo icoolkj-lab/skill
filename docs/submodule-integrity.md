@@ -18,7 +18,7 @@ The recorded commit SHA was checked against the source repository's commit API f
 ## Unresolved
 
 - `skills/anything-to-notebooklm/anything-to-notebooklm`
-  - Recorded commit: `965051880b73873bb73d849eb6d6edd0c3eef20f03`
+  - Recorded commit: `965051880b73873bb73d849eb6edd0c3eef20f03`
   - The source repository for this exact gitlink commit has not been verified.
   - Do not invent a submodule URL or replace the gitlink until its origin is confirmed.
 
