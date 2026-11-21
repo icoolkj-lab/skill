@@ -20,11 +20,11 @@ The most comprehensive and frequently updated AI Agent skill library, featuring 
 ## 📊 Statistics
 
 <!-- AUTO-SYNC-STATS-START -->
-- **Index entries** (pending curation): 10,729
-- **Local curated skills**: 83
-- **Search index** (skills.json): 266
-- **Trending board** (by stars): 85
-- **Last synced**: 2026-11-12 12:36 (auto-refreshed daily)
+- **Index entries** (pending curation): 12,554
+- **Local curated skills**: 89
+- **Search index** (skills.json): 268
+- **Trending board** (by stars): 87
+- **Last synced**: 2026-11-21 02:11 (auto-refreshed daily)
 <!-- AUTO-SYNC-STATS-END -->
 - **Backup Coverage**: 100% (fully backed up)
 - **Auto Update**: Index and trending board refreshed daily
