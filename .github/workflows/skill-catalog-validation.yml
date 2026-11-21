@@ -28,3 +28,8 @@ jobs:
       - run: python scripts/validate_skill_catalog.py
       - run: python scripts/check_skill_mirrors.py
       - run: python scripts/validate_local_skill_data.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: provisional-skill-catalog-${{ github.sha }}
+          path: catalog/registry.json
+          if-no-files-found: error
