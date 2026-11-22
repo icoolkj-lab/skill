@@ -2,7 +2,7 @@
 
 > 按用途查找技能。点击名称直接打开 SKILL.md；合集入口和子技能分别列出，资源仍保留在技能包内。
 
-**入口数：132**（包含套件与子技能，不代表独立可安装技能数）。
+**skills/ 内入口数：124**（包含套件与子技能，不代表独立可安装技能数）。
 
 ## 内容创作（17）
 
@@ -167,16 +167,18 @@
 
 - [expert-prompt-migrator](expert-prompt-migrator/SKILL.md)
 
-## 其他 / 待归类（8）
+## 其他项目中的 Skill
 
-- [doc-parse](-agentteams/skills/doc-parse/SKILL.md)
-- [four-color-cards](-agentteams/skills/four-color-cards/SKILL.md)
-- [provenance](-agentteams/skills/provenance/SKILL.md)
-- [security-scan](-agentteams/skills/security-scan/SKILL.md)
-- [wechat-auto-sender](ls/07-微信自动化/wechat-auto-sender/SKILL.md)
-- [companion-simple](s/companion-simple/SKILL.md)
-- [companion-skill](s/companion-skill/SKILL.md)
-- [skill-template](es/skill-template/SKILL.md)
+这些入口属于独立项目、自建技能或模板，不放在 skills/ 收藏库内：
+
+- [antinet-agentteams/skills/doc-parse/SKILL.md](../antinet-agentteams/skills/doc-parse/SKILL.md)
+- [antinet-agentteams/skills/four-color-cards/SKILL.md](../antinet-agentteams/skills/four-color-cards/SKILL.md)
+- [antinet-agentteams/skills/provenance/SKILL.md](../antinet-agentteams/skills/provenance/SKILL.md)
+- [antinet-agentteams/skills/security-scan/SKILL.md](../antinet-agentteams/skills/security-scan/SKILL.md)
+- [my-skills/07-微信自动化/wechat-auto-sender/SKILL.md](../my-skills/07-微信自动化/wechat-auto-sender/SKILL.md)
+- [projects/companion-simple/SKILL.md](../projects/companion-simple/SKILL.md)
+- [projects/companion-skill/SKILL.md](../projects/companion-skill/SKILL.md)
+- [templates/skill-template/SKILL.md](../templates/skill-template/SKILL.md)
 
 ---
 
