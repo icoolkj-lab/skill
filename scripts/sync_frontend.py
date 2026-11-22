@@ -5,8 +5,8 @@
 职责：
 1. 合并 data/ 与 public/data/ 两份已分叉的 local_skills.json（取并集，data/ 为主）；
 2. 写回两处保持一致（前端 local-skills.html 读 public/data/local_skills.json）；
-3. 重写 README.md「💾 本地技能库」段（LOCAL-SKILLS 标记内，机器人不会触碰）；
-4. 供收录流水线调用：新收录技能后跑一次即完成前端+README 同步。
+3. 重写 docs/catalog/local-skills.md 中的本地技能目录段（LOCAL-SKILLS 标记内，机器人不会触碰）；
+4. 供收录流水线调用：新收录技能后跑一次即完成前端+目录同步。
 
 用法: python scripts/sync_frontend.py [--dry-run]
 """
@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA_A = ROOT / "data" / "local_skills.json"        # 主数据（机器人 badge 引用）
 DATA_B = ROOT / "public" / "data" / "local_skills.json"  # 前端数据
-README = ROOT / "README.md"
+README = ROOT / "docs" / "catalog" / "local-skills.md"
 
 MARK_START = "<!-- LOCAL-SKILLS-START -->"
 MARK_END = "<!-- LOCAL-SKILLS-END -->"
@@ -134,7 +134,7 @@ def main():
     changed_b = set()
     for cat in merged["categories"]:
         pass
-    print(f"README: {'将更新' if new_readme != readme else '无变化'}"
+    print(f"目录页: {'将更新' if new_readme != readme else '无变化'}"
           f"（{len(new_readme.splitlines())} 行）")
     if dry:
         print("[dry-run] 未写入任何文件")
@@ -143,7 +143,7 @@ def main():
     DATA_B.write_text(payload + "\n", encoding="utf-8")
     if new_readme != readme:
         README.write_text(new_readme, encoding="utf-8")
-    print("✅ 已写入 data/local_skills.json、public/data/local_skills.json、README.md")
+    print("✅ 已写入 data/local_skills.json、public/data/local_skills.json、docs/catalog/local-skills.md")
     return 0
 
 
