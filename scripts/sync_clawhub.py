@@ -129,10 +129,10 @@ def generate_cli_section(readme):
 def update_readme(info):
     """Update README with clawhub info."""
     # README is in repo root, not scripts directory
-    readme_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "README.md")
+    readme_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "docs", "catalog", "clawhub.md")
 
     if not os.path.exists(readme_path):
-        print(f"README.md not found at {readme_path}")
+        print(f"ClawHub catalog not found at {readme_path}")
         return False
 
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -169,7 +169,7 @@ Latest commit: `{info["latest_hash"][:7]}`
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print(f"Updated README with {len(info['packages'])} packages")
+    print(f"Updated docs/catalog/clawhub.md with {len(info['packages'])} packages")
     return True
 
 
@@ -187,9 +187,9 @@ def main():
         return
 
     if update_readme(info):
-        print("README.md updated successfully")
+        print("ClawHub catalog updated successfully")
     else:
-        print("Failed to update README.md")
+        print("Failed to update ClawHub catalog")
         sys.exit(1)
 
 
