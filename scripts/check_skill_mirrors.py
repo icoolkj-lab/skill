@@ -8,13 +8,13 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 PAIRS = (
     ("antinet-agentteams/skills/doc-parse/scripts/run_doc_parse.py",
-     "skills/antinet-doc-parse/scripts/run_doc_parse.py"),
+     "skills/office-productivity/antinet-doc-parse/scripts/run_doc_parse.py"),
     ("antinet-agentteams/skills/four-color-cards/scripts/run_four_color_cards.py",
-     "skills/antinet-four-color-cards/scripts/run_four_color_cards.py"),
+     "skills/knowledge-management/antinet-four-color-cards/scripts/run_four_color_cards.py"),
     ("antinet-agentteams/skills/provenance/scripts/run_provenance.py",
-     "skills/antinet-provenance/scripts/run_provenance.py"),
+     "skills/knowledge-management/antinet-provenance/scripts/run_provenance.py"),
     ("antinet-agentteams/skills/security-scan/scripts/run_security_scan.py",
-     "skills/antinet-security-scan/scripts/run_security_scan.py"),
+     "skills/software-development/antinet-security-scan/scripts/run_security_scan.py"),
 )
 
 def digest(path: Path) -> str:

@@ -11,7 +11,7 @@ CATEGORY_MAP = {
     "software-development":"software-development", "ai-agents":"ai-agents",
     "data-analysis":"data-analysis", "marketing-commerce":"marketing-commerce",
     "knowledge-management":"knowledge-management", "automation-integration":"automation-integration",
-    "professional-domains":"professional-domains", "skill-development":"skill-development"
+    "professional-domains":"professional-domains", "skill-development":"skill-development", "audio-production":"audio-production"
 }
 def read_frontmatter(text):
     m=re.match(r"^---\s*\n([\s\S]*?)\n---(?:\s*\n|$)",text)

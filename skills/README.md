@@ -2,6 +2,22 @@
 
 本目录存放收录技能、技能套件和子技能。**找技能请先打开 [INDEX.md 技能导航](INDEX.md)**，不必从目录树逐层翻找。
 
+## 分类目录
+
+- 内容创作：content-creation
+- 视频创作：video-production
+- 电商与营销：marketing-commerce
+- 图片与视觉设计：image-design
+- 办公与文档：office-productivity
+- 软件开发：software-development
+- AI Agent 与协作：ai-agents
+- 数据分析与研究：data-analysis
+- 知识管理：knowledge-management
+- 自动化与集成：automation-integration
+- 专业行业应用：professional-domains
+- Skill 开发与管理：skill-development
+- 语音与音频：audio-production
+
 ## 目录原则
 
 - 独立 Skill 的入口是 SKILL.md。

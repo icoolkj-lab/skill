@@ -65,6 +65,11 @@
       "id": "uncategorized",
       "name": "待分类",
       "description": "尚未完成场景判定的资产"
+    },
+    {
+      "id": "audio-production",
+      "name": "语音与音频",
+      "description": "语音合成、识别、音频处理和声音生成"
     }
   ]
 }
