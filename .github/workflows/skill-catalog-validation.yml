@@ -6,6 +6,7 @@ on:
       - "data/local_skills.json"
       - "public/data/local_skills.json"
       - "README.md"
+      - "docs/catalog/local-skills.md"
       - "scripts/**"
       - "**/SKILL.md"
       - ".github/workflows/skill-catalog-validation.yml"
