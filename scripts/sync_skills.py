@@ -12,6 +12,8 @@ from datetime import datetime
 import urllib.request
 import ssl
 
+SOURCE_FILE = os.path.join("data", "sources", "SKILL_SOURCES.json")
+
 # 上游源配置
 UPSTREAM_SOURCES = {
     "openai_skills": {
@@ -126,18 +128,19 @@ def extract_mattpocock_skills(text):
     return repos
 
 def load_existing_sources():
-    if os.path.exists('SKILL_SOURCES.json'):
+    if os.path.exists(SOURCE_FILE):
         try:
-            with open('SKILL_SOURCES.json', 'r', encoding='utf-8') as f:
+            with open(SOURCE_FILE, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
             print(f"⚠️ 读取现有文件失败: {e}")
     return {"sources": {}, "last_updated": None, "total_count": 0}
 
 def save_sources(sources_data):
-    with open('SKILL_SOURCES.json', 'w', encoding='utf-8') as f:
+    os.makedirs(os.path.dirname(SOURCE_FILE), exist_ok=True)
+    with open(SOURCE_FILE, 'w', encoding='utf-8') as f:
         json.dump(sources_data, f, ensure_ascii=False, indent=2)
-    print(f"✅ 已保存 SKILL_SOURCES.json，共 {sources_data['total_count']} 个技能源")
+    print(f"✅ 已保存 {SOURCE_FILE}，共 {sources_data['total_count']} 个技能源")
 
 def github_home(info: dict) -> str:
     u = info.get("url", "")
@@ -258,8 +261,10 @@ def update_readme(sources_data):
     skills_content += f"{MARKER_END}"
 
     existing_content = ""
-    if os.path.exists('README.md'):
-        with open('README.md', 'r', encoding='utf-8') as f:
+    catalog_path = 'docs/catalog/upstream-skills.md'
+    os.makedirs(os.path.dirname(catalog_path), exist_ok=True)
+    if os.path.exists(catalog_path):
+        with open(catalog_path, 'r', encoding='utf-8') as f:
             existing_content = f.read()
 
     if MARKER_START in existing_content and MARKER_END in existing_content:
@@ -272,8 +277,8 @@ def update_readme(sources_data):
     else:
         new_content = existing_content.rstrip() + "\n\n" + skills_content
 
-    _apply_readme("README.md", skills_content)
-    print("✅ 已在 README.md 写入技能列表（自动段）")
+    _apply_readme(catalog_path, skills_content)
+    print("✅ 已更新 docs/catalog/upstream-skills.md")
 
 def update_readme_en(sources_data):
     """English AUTO-SYNC section for README_EN.md."""
@@ -304,8 +309,10 @@ def update_readme_en(sources_data):
             content += "- No data yet\n"
         content += "\n"
     content += MARKER_END
-    _apply_readme("README_EN.md", content)
-    print("✅ 已在 README_EN.md 写入技能列表（自动段）")
+    catalog_path = 'docs/catalog/upstream-skills-en.md'
+    os.makedirs(os.path.dirname(catalog_path), exist_ok=True)
+    _apply_readme(catalog_path, content)
+    print("✅ 已更新 docs/catalog/upstream-skills-en.md")
 
 
 # 各上游对应的自身仓库（用于 awesome list 排除自身）
@@ -458,14 +465,14 @@ def refresh_all_readme(sources_data) -> None:
         search=count_search_skills(),
         trending=count_trending_skills(),
     )
-    inject_readme_stats(**stats, path="README.md", lang="zh")
-    inject_readme_stats(**stats, path="README_EN.md", lang="en")
+    inject_readme_stats(**stats, path="docs/catalog/upstream-skills.md", lang="zh")
+    inject_readme_stats(**stats, path="docs/catalog/upstream-skills-en.md", lang="en")
     guard_readme_claims("README.md")
     guard_readme_claims("README_EN.md")
 
 
 def rebuild_readme_only() -> None:
-    """--readme-only：用本地 SKILL_SOURCES.json 重建 README，不抓取上游（用于改模板后立即生效）。"""
+    """--readme-only：用本地 data/sources/SKILL_SOURCES.json 重建目录页，不抓取上游（用于改模板后立即生效）。"""
     d = load_existing_sources()
     refresh_all_readme(d)
     print("✅ README / README_EN 已按新模板重建（未出网）")

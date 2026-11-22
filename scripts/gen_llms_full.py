@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SOURCES_JSON = REPO / "SKILL_SOURCES.json"
+SOURCES_JSON = REPO / "data" / "sources" / "SKILL_SOURCES.json"
 README = REPO / "README.md"
 OUT = REPO / "public" / "llms-full.txt"
 
@@ -65,7 +65,7 @@ add("## 数据来源")
 add("")
 add("- 上游 awesome 仓库: https://github.com/VoltAgent/awesome-agent-skills （每 24 小时同步）")
 add("- 本地仓库 README: https://github.com/anbeime/skill/blob/main/README.md")
-add("- 完整源 JSON: https://github.com/anbeime/skill/blob/main/SKILL_SOURCES.json")
+add("- 完整源 JSON: https://github.com/anbeime/skill/blob/main/data/sources/SKILL_SOURCES.json")
 add("")
 
 # ----- Official team summary -----

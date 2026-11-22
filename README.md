@@ -8,6 +8,8 @@
 - [本地精选技能数据](data/local_skills.json)
 - [在线技能检索](https://skill.miyucaicai.cn/skills.html)
 - [资产目录与治理](catalog/README.md)
+- [上游技能仓库索引](docs/catalog/upstream-skills.md)
+- [ClawHub 目录](docs/catalog/clawhub.md)
 - [本地精选目录](docs/catalog/local-skills.md)
 
 ## 仓库结构

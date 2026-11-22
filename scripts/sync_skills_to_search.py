@@ -45,7 +45,7 @@ from sync_skills import (inject_readme_stats, count_local_skills,
                          guard_readme_claims)
 
 
-SOURCE_PATH = Path("SKILL_SOURCES.json")
+SOURCE_PATH = Path("data/sources/SKILL_SOURCES.json")
 TARGET_PATH = Path("public/data/skills.json")
 
 SOURCE_CATEGORY_HINTS = {
@@ -367,8 +367,8 @@ def main():
                 search=count_search_skills(),
                 trending=count_trending_skills(),
             )
-            inject_readme_stats(**_stats, path="README.md", lang="zh")
-            inject_readme_stats(**_stats, path="README_EN.md", lang="en")
+            inject_readme_stats(**_stats, path="docs/catalog/upstream-skills.md", lang="zh")
+            inject_readme_stats(**_stats, path="docs/catalog/upstream-skills-en.md", lang="en")
             # 清理头部违规宣称
             guard_readme_claims("README.md")
             guard_readme_claims("README_EN.md")

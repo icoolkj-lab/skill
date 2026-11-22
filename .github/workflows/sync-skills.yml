@@ -55,9 +55,9 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add SKILL_SOURCES.json README.md public/data/skills.json
+          git add data/sources/SKILL_SOURCES.json docs/catalog/upstream-skills.md docs/catalog/upstream-skills-en.md public/data/skills.json
           git commit -m "🔄 Auto-sync: Update skill sources from upstream [$(date +%Y-%m-%d)]" \
-            -m "- sync_skills.py: refresh SKILL_SOURCES.json + README.md" \
+            -m "- sync_skills.py: refresh source registry + catalog pages" \
             -m "- sync_skills_to_search.py: refresh public/data/skills.json (trending-only, no curated pollution)"
           git push
 

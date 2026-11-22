@@ -8,6 +8,8 @@ A collected library of AI Agent Skills, including standalone skills, suites, sub
 - [Local curated skills data](data/local_skills.json)
 - [Online skill search](https://skill.miyucaicai.cn/skills.html)
 - [Asset catalog and governance](catalog/README.md)
+- [Upstream skill repository index](docs/catalog/upstream-skills-en.md)
+- [ClawHub catalog](docs/catalog/clawhub.md)
 - [Curated catalog page](docs/catalog/local-skills.md)
 
 ## Repository layout
