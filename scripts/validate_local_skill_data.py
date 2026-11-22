@@ -8,7 +8,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATHS = (ROOT / "data/local_skills.json", ROOT / "public/data/local_skills.json")
-README = ROOT / "README.md"
+CATALOG = ROOT / "docs/catalog/local-skills.md"
 START, END = "<!-- LOCAL-SKILLS-START -->", "<!-- LOCAL-SKILLS-END -->"
 
 def fail(message: str) -> None:
@@ -41,15 +41,15 @@ def main() -> int:
         fail(f"metadata.total_skills must equal unique skill count ({expected_total})")
         return 1
 
-    readme = README.read_text(encoding="utf-8")
-    stat = re.search(r"本地技能（精选策展）\*\*:\s*(\d+)\s*个", readme)
+    catalog_page = CATALOG.read_text(encoding="utf-8")
+    stat = re.search(r"共\s*\*\*(\d+)\*\*\s*个精选技能", catalog_page)
     if not stat or int(stat.group(1)) != expected_total:
-        fail(f"README curated skill badge/stat must be {expected_total}")
+        fail(f"local catalog page count must be {expected_total}")
         return 1
-    if START not in readme or END not in readme:
-        fail("README is missing local-skill section markers")
+    if START not in catalog_page or END not in catalog_page:
+        fail("local catalog page is missing section markers")
         return 1
-    section = readme.split(START, 1)[1].split(END, 1)[0]
+    section = catalog_page.split(START, 1)[1].split(END, 1)[0]
     rendered = {}
     current = None
     for line in section.splitlines():
@@ -58,16 +58,16 @@ def main() -> int:
             current = heading.group(1)
             rendered[current] = []
             if int(heading.group(2)) != len(categories.get(current, {}).get("skills", [])):
-                fail(f"README category count mismatch: {current}")
+                fail(f"local catalog category count mismatch: {current}")
             continue
         bullet = re.match(r"^-\s+\*\*(.+?)\*\*", line)
         if bullet and current is not None:
             rendered[current].append(bullet.group(1))
     if set(rendered) != set(categories):
-        fail("README category headings do not match JSON category keys")
+        fail("local catalog category headings do not match JSON category keys")
     for category, record in categories.items():
         if rendered.get(category, []) != record.get("skills", []):
-            fail(f"README skill list mismatch in category: {category}")
+            fail(f"local catalog skill list mismatch in category: {category}")
     if expected_total != assignments:
         print(f"INFO: {expected_total} unique skills across {assignments} category assignments (multi-category entries allowed)")
     if expected_total == assignments:
