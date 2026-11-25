@@ -5,7 +5,7 @@ Auto-synchronized package and CLI information for the ClawHub registry. This is 
 <!-- clawhub-sync-start -->
 ## ClawHub (Skill Registry)
 
-Latest commit: `6b91b63`
+Latest commit: `c6f8ef3`
 
 ### Packages
 
